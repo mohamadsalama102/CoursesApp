@@ -1,0 +1,166 @@
+[
+  {
+    "Name": "Web Development",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Data Science",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Mobile Development",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Programming Languages",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Game Development",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Database Design & Development",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Software Testing",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Software Engineering",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Software Development Tools",
+    "CategoryId": 1
+  },
+  {
+    "Name": "No Code Development",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Entrepreneurship",
+    "CategoryId": 2
+  },
+  {
+    "Name": "Accounting & Bookkeeping",
+    "CategoryId": 3
+  },
+  {
+    "Name": "IT Certifications",
+    "CategoryId": 4
+  },
+  {
+    "Name": "Microsoft",
+    "CategoryId": 5
+  },
+  {
+    "Name": "Personal Transformation",
+    "CategoryId": 6
+  },
+  {
+    "Name": "Web Design",
+    "CategoryId": 7
+  },
+  {
+    "Name": "Digital Marketing",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Search Engine Optimization",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Social Media Marketing",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Branding",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Marketing Fundentals",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Marketing Analytics & Automation",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Public Relations",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Paid Advertizing",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Video & Mobile Marketing",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Content Marketing",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Growth Hacking",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Affiliate Marketing",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Product Marketing",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Other Marketing",
+    "CategoryId": 8
+  },
+  {
+    "Name": "Arts & Crafts",
+    "CategoryId": 9
+  },
+  {
+    "Name": "Digital Photography",
+    "CategoryId": 10
+  },
+  {
+    "Name": "Fitness",
+    "CategoryId": 11
+  },
+  {
+    "Name": "Instruments",
+    "CategoryId": 12
+  },
+  {
+    "Name": "Music Production",
+    "CategoryId": 12
+  },
+  {
+    "Name": "Music Fundamentals",
+    "CategoryId": 12
+  },
+  {
+    "Name": "Vocal",
+    "CategoryId": 12
+  },
+  {
+    "Name": "Music Techniques",
+    "CategoryId": 12
+  },
+  {
+    "Name": "Music Software",
+    "CategoryId": 12
+  },
+  {
+    "Name": "Other Music",
+    "CategoryId": 12
+  },
+  {
+    "Name": "Learning Languages",
+    "CategoryId": 13
+  }
+]

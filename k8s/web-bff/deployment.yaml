@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: webbff-depl
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: webbff
+ template:
+  metadata:
+   labels:
+    app: webbff
+  spec:
+   containers:
+    - name: webbff
+      image: nagiashraf/coursesappwebbff:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webbff-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: webbff
+  ports:
+  - name: webbff
+    protocol: TCP
+    port: 80
+    targetPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webbff-loadbalancer
+spec:
+  type: LoadBalancer
+  selector:
+    app: webbff
+  ports:
+  - protocol: TCP
+    port: 9999
+    targetPort: 80

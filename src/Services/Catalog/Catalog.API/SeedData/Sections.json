@@ -1,0 +1,182 @@
+[
+  {
+    "Order": 1,
+    "Title": "Introduction",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 1
+  },
+  {
+    "Order": 2,
+    "Title": "Building a walking skeleton Part One - API",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 1
+  },
+  {
+    "Order": 3,
+    "Title": "Building a walking skeleton Part Two - Angular",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 1
+  },
+  {
+    "Order": 4,
+    "Title": "Authentication basics",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 1
+  },
+  {
+    "Order": 5,
+    "Title": "Client login and register",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 1
+  },
+  {
+    "Order": 1,
+    "Title": "Fundamentos de Web API y HTTP",
+    "LearningObjective": "Objectivo para Aprender",
+    "CourseId": 2
+  },
+  {
+    "Order": 2,
+    "Title": "Configurando el Ambiente",
+    "LearningObjective": "Objectivo para Aprender",
+    "CourseId": 2
+  },
+  {
+    "Order": 3,
+    "Title": "Nuestro Primer Web API",
+    "LearningObjective": "Objectivo para Aprender",
+    "CourseId": 2
+  },
+  {
+    "Order": 4,
+    "Title": "Fundamentos de ASP.NET Core y Web API",
+    "LearningObjective": "Objectivo para Aprender",
+    "CourseId": 2
+  },
+  {
+    "Order": 1,
+    "Title": "Introduction",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 3
+  },
+  {
+    "Order": 2,
+    "Title": "Advanced Machine Learning",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 3
+  },
+  {
+    "Order": 1,
+    "Title": "Welcome to the course",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 4
+  },
+  {
+    "Order": 2,
+    "Title": "Part 1: Python Packages (Numpy & Panda)",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 4
+  },
+  {
+    "Order": 3,
+    "Title": "Part 2: Data Reprocessing",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 4
+  },
+  {
+    "Order": 4,
+    "Title": "Regression",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 4
+  },
+  {
+    "Order": 5,
+    "Title": "Simple Linear Regression",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 4
+  },
+  {
+    "Order": 1,
+    "Title": "Using Data",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 5
+  },
+  {
+    "Order": 2,
+    "Title": "Making Decisions",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 5
+  },
+  {
+    "Order": 3,
+    "Title": "Looping",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 5
+  },
+  {
+    "Order": 4,
+    "Title": "Using Arrays",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 5
+  },
+  {
+    "Order": 5,
+    "Title": "Methods",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 5
+  },
+  {
+    "Order": 6,
+    "Title": "Classes",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 5
+  },
+  {
+    "Order": 1,
+    "Title": "Introduction",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 6
+  },
+  {
+    "Order": 2,
+    "Title": "Social Media Marketing",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 6
+  },
+  {
+    "Order": 3,
+    "Title": "Facebook",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 6
+  },
+  {
+    "Order": 4,
+    "Title": "Instagram",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 6
+  },
+  {
+    "Order": 1,
+    "Title": "Introduction",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 7
+  },
+  {
+    "Order": 2,
+    "Title": "API Basics",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 7
+  },
+  {
+    "Order": 3,
+    "Title": "API Architecture",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 7
+  },
+  {
+    "Order": 4,
+    "Title": "API Generic Repository",
+    "LearningObjective": "Learning Objective",
+    "CourseId": 7
+  }
+]

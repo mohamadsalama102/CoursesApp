@@ -1,0 +1,208 @@
+[
+  {
+    "Content": "int x = 5.5;",
+    "QuizId": 1,
+    "RelatedLectureId": 21,
+    "Answers": [
+      {
+        "Order": 1,
+        "Content": "True",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 2,
+        "Content": "False",
+        "IsCorrect": true,
+        "Explanation": ""
+      }
+    ]
+  },
+  {
+    "Content": "A data type describes what kind of data a variable can hold.",
+    "QuizId": 1,
+    "RelatedLectureId": 22,
+    "Answers": [
+      {
+        "Order": 1,
+        "Content": "True",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 2,
+        "Content": "False",
+        "IsCorrect": false,
+        "Explanation": ""
+      }
+    ]
+  },
+  {
+    "Content": "Which variable declaration component is NOT necessary?",
+    "QuizId": 1,
+    "RelatedLectureId": 22,
+    "Answers": [
+      {
+        "Order": 1,
+        "Content": "Data type",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 2,
+        "Content": "Identifier",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 3,
+        "Content": "Assignment operator",
+        "IsCorrect": true,
+        "Explanation": "You do not have to give a variable an initial value. When you do, its called initialization."
+      },
+      {
+        "Order": 4,
+        "Content": "Semicolon",
+        "IsCorrect": false,
+        "Explanation": ""
+      }
+    ]
+  },
+  {
+    "Content": "Assume you have a variable declared as int myInt = 3;. What is the value of 10 / myInt?",
+    "QuizId": 2,
+    "RelatedLectureId": 23,
+    "Answers": [
+      {
+        "Order": 1,
+        "Content": "3.3333",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 2,
+        "Content": "3",
+        "IsCorrect": true,
+        "Explanation": "This is integer division, so the answer will not contain a decimal."
+      },
+      {
+        "Order": 3,
+        "Content": "4",
+        "IsCorrect": false,
+        "Explanation": ""
+      }
+    ]
+  },
+  {
+    "Content": "What is the value of the expression 4 + 3 * 2?",
+    "QuizId": 2,
+    "RelatedLectureId": 24,
+    "Answers": [
+      {
+        "Order": 1,
+        "Content": "10",
+        "IsCorrect": true,
+        "Explanation": "Multiplication comes before addition."
+      },
+      {
+        "Order": 2,
+        "Content": "14",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 3,
+        "Content": "0",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 4,
+        "Content": "9",
+        "IsCorrect": false,
+        "Explanation": ""
+      }
+    ]
+  },
+  {
+    "Content": "Assume you have a variable declared as int myInt = 5;. How would you increase the value of myInt by one?",
+    "QuizId": 2,
+    "RelatedLectureId": 24,
+    "Answers": [
+      {
+        "Order": 1,
+        "Content": "myInt = 6;",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 2,
+        "Content": "myInt = +1;",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 3,
+        "Content": "myInt = myInt + 1;",
+        "IsCorrect": true,
+        "Explanation": ""
+      }
+    ]
+  },
+  {
+    "Content": "Assume you have a variable declared as int myInt = 5;. What is the value of myInt after running the statement myInt += 100;",
+    "QuizId": 2,
+    "RelatedLectureId": 25,
+    "Answers": [
+      {
+        "Order": 1,
+        "Content": "5",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 2,
+        "Content": "100",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 3,
+        "Content": "105",
+        "IsCorrect": true,
+        "Explanation": ""
+      },
+      {
+        "Order": 4,
+        "Content": "95",
+        "IsCorrect": false,
+        "Explanation": ""
+      }
+    ]
+  },
+  {
+    "Content": "Assume you have a variable declared as int myInt = 3;. If you execute the statement int myInt2 = ++myInt;, what is the value of myInt2?",
+    "QuizId": 2,
+    "RelatedLectureId": 25,
+    "Answers": [
+      {
+        "Order": 1,
+        "Content": "2",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 2,
+        "Content": "3",
+        "IsCorrect": false,
+        "Explanation": ""
+      },
+      {
+        "Order": 3,
+        "Content": "4",
+        "IsCorrect": true,
+        "Explanation": ""
+      }
+    ]
+  }
+]

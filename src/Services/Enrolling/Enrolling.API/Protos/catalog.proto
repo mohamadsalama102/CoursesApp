@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "nagiashraf.CoursesApp.Services.Catalog.API.Protos";
+
+service GrpcCatalog {
+    rpc GetCoursePrice (GetCoursePriceRequest) returns (CatalogResponse);
+}
+
+message GetCoursePriceRequest {
+	int32 courseId = 1;
+}
+
+message DecimalValue {
+    // Example: decimal 12345.6789 will be implicitly converted to DecimalValue(units = 12345, nanos = 678900000)
+    int64 units = 1;
+    sfixed32 nanos = 2;
+}
+
+message CatalogResponse {
+    DecimalValue price = 1;
+}

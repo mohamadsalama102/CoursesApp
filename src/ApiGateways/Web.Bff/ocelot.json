@@ -1,0 +1,54 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{version}/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "catalogapi-clusterip-srv",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{version}/catalog/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "catalogapi-clusterip-srv",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/catalog/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "enrollingapi-clusterip-srv",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{version}/enrolling/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "identityapi-clusterip-srv",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{version}/identity/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    }
+  ],
+  "GlobalConfiguration": {
+  }
+}

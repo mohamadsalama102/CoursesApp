@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<UserSecretsId>6478b8d3-e946-45dc-8f70-4416ebd9401c</UserSecretsId>
+	<RootNamespace>nagiashraf.CoursesApp.Services.Enrolling.API</RootNamespace>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<DockerfileContext>..\..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.21.12" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.51.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.51.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Stripe.net" Version="41.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="paymentTestingClient\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj" />
+    <ProjectReference Include="..\..\..\EventBus\EventBus\EventBus.csproj" />
+    <ProjectReference Include="..\..\..\JwtAuthenticationManager\JwtAuthenticationManager.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="Protos\catalog.proto" GrpcServices="Client" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,86 @@
+[
+  {
+    "RatingValue": 3,
+    "Review": "Great course with so many aspects covered as part of learning - thank you very much for in depth explanations of topics - so informative that I will be looking back here to improve / remind of certain aspects in the future.",
+    "StudentId": "84e5a8d8-64aa-45af-8d78-47be91fba795",
+    "CourseId": 1
+  },
+  {
+    "RatingValue": 5,
+    "Review": null,
+    "StudentId": "e14da4db-24d7-4123-9a44-985e51184362",
+    "CourseId": 1
+  },
+  {
+    "RatingValue": 5,
+    "Review": "Simply superb | updated to the latest versions | precise | good clarity | suitable for Full stack developer focusing .NET backend and Angular front end. Exceeding the expectations !",
+    "StudentId": "c32af056-2a6d-4643-89f6-fb543be12b2c",
+    "CourseId": 1
+  },
+  {
+    "RatingValue": 4,
+    "Review": "Thank you for all this experience! I like the most, the support that comes from Neil, during this course. (Q&A part is very helpful) Thank you, Nail!",
+    "StudentId": "17b5cb4f-ab4f-4492-9057-89405fbf465e",
+    "CourseId": 1
+  },
+  {
+    "RatingValue": 5,
+    "Review": "Me cuesta bastante el ingles y la verdad que lo he llevado bien, hay cosas en las que se para mucho y otras en las que avanza muy rápido, pero al final no deja de ser un curso online.",
+    "StudentId": "fe3539c9-973b-4b2b-923f-7bca33c1df96",
+    "CourseId": 1
+  },
+  {
+    "RatingValue": 5,
+    "Review": "Good Introduction to AI",
+    "StudentId": "b4166183-d828-4630-9b9f-7fbf90725497",
+    "CourseId": 3
+  },
+  {
+    "RatingValue": 5,
+    "Review": null,
+    "StudentId": "6d4e2bcc-b530-4d03-8f02-4d33cd65ba1d",
+    "CourseId": 3
+  },
+  {
+    "RatingValue": 4,
+    "Review": "The maths explaination could have been a bit better.",
+    "StudentId": "3ce05f51-d2f6-46f4-ae61-99ab4b940d54",
+    "CourseId": 3
+  },
+  {
+    "RatingValue": 4,
+    "Review": null,
+    "StudentId": "c37f1a7f-3229-493d-8225-96f21569ebd4",
+    "CourseId": 4
+  },
+  {
+    "RatingValue": 4,
+    "Review": "great",
+    "StudentId": "fd20e254-2236-4722-8968-08f4b13cdc1a",
+    "CourseId": 4
+  },
+  {
+    "RatingValue": 3,
+    "Review": null,
+    "StudentId": "f6767f8d-fc18-423a-8326-0a0fc9a7d075",
+    "CourseId": 4
+  },
+  {
+    "RatingValue": 5,
+    "Review": null,
+    "StudentId": "0129f74a-701f-4815-85a1-d6bf59efb04a",
+    "CourseId": 5
+  },
+  {
+    "RatingValue": 5,
+    "Review": null,
+    "StudentId": "66ee082e-edd0-44c1-812e-24083d546a8e",
+    "CourseId": 5
+  },
+  {
+    "RatingValue": 4,
+    "Review": "I learn a lot in this course as someone who is interesting in marketing, i learn how to use social media properly to create great ads campaign, thanks a lot for this amazing course.",
+    "StudentId": "becc07f7-31c4-452b-b2b7-d5bd5f478ccb",
+    "CourseId": 6
+  }
+]

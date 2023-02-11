@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>6478b8d3-e946-45dc-8f70-4416ebd9401c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..\..</DockerfileContext>
+    <RootNamespace>nagiashraf.CoursesApp.Services.Catalog.API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Protos\identity.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="appsettings.Production.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.21.12" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.51.0" />
+	<PackageReference Include="Grpc.Net.Client" Version="2.51.0" />
+	<PackageReference Include="Grpc.Tools" Version="2.51.0">
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj" />
+    <ProjectReference Include="..\..\..\EventBus\EventBus\EventBus.csproj" />
+    <ProjectReference Include="..\..\..\JwtAuthenticationManager\JwtAuthenticationManager.csproj" />
+    <ProjectReference Include="..\Catalog.Services\Catalog.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\downloadableFiles\" />
+    <Folder Include="wwwroot\subtitles\" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="Protos\catalog.proto" GrpcServices="Server" />
+		<Protobuf Include="Protos\identity.proto" GrpcServices="Client" />
+	</ItemGroup>
+
+</Project>

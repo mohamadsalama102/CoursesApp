@@ -1,0 +1,70 @@
+[
+  {
+    "CourseId": 1,
+    "StudentId": "84e5a8d8-64aa-45af-8d78-47be91fba795"
+  },
+  {
+    "CourseId": 1,
+    "StudentId": "e14da4db-24d7-4123-9a44-985e51184362"
+  },
+  {
+    "CourseId": 1,
+    "StudentId": "c32af056-2a6d-4643-89f6-fb543be12b2c"
+  },
+  {
+    "CourseId": 1,
+    "StudentId": "17b5cb4f-ab4f-4492-9057-89405fbf465e"
+  },
+  {
+    "CourseId": 1,
+    "StudentId": "fe3539c9-973b-4b2b-923f-7bca33c1df96"
+  },
+  {
+    "CourseId": 1,
+    "StudentId": "b4166183-d828-4630-9b9f-7fbf90725497"
+  },
+  {
+    "CourseId": 3,
+    "StudentId": "e780a6bd-0826-4a34-8844-b31f3f1469a9"
+  },
+  {
+    "CourseId": 3,
+    "StudentId": "6d4e2bcc-b530-4d03-8f02-4d33cd65ba1d"
+  },
+  {
+    "CourseId": 3,
+    "StudentId": "3ce05f51-d2f6-46f4-ae61-99ab4b940d54"
+  },
+  {
+    "CourseId": 3,
+    "StudentId": "c37f1a7f-3229-493d-8225-96f21569ebd4"
+  },
+  {
+    "CourseId": 4,
+    "StudentId": "fd20e254-2236-4722-8968-08f4b13cdc1a"
+  },
+  {
+    "CourseId": 4,
+    "StudentId": "f6767f8d-fc18-423a-8326-0a0fc9a7d075"
+  },
+  {
+    "CourseId": 4,
+    "StudentId": "0129f74a-701f-4815-85a1-d6bf59efb04a"
+  },
+  {
+    "CourseId": 4,
+    "StudentId": "66ee082e-edd0-44c1-812e-24083d546a8e"
+  },
+  {
+    "CourseId": 5,
+    "StudentId": "40bab629-5c1f-4764-ae81-ea3364ffa9af"
+  },
+  {
+    "CourseId": 5,
+    "StudentId": "1c16d44d-01c6-4366-9663-fef19968ded9"
+  },
+  {
+    "CourseId": 6,
+    "StudentId": "becc07f7-31c4-452b-b2b7-d5bd5f478ccb"
+  }
+]

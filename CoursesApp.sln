@@ -1,0 +1,175 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B7FB93DC-F2BB-46D8-993F-8E212C92D81D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6B3EEC0E-8D85-45AC-AE93-8FAF46C2C069}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{93DC1A43-F434-4B7A-9F5E-07CE112154F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{1BD01088-8F2C-4BF5-8631-27D1DAA97331}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\rabbitmq-deployment.yaml = k8s\rabbitmq-deployment.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "catalog-api", "catalog-api", "{F24B6ACA-E65A-4CA9-8B01-146215112156}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\catalog-api\deployment.yaml = k8s\catalog-api\deployment.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{AC9C5C6B-ECCA-4BCD-9EAB-7348D291ACC1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.API", "src\Services\Identity\Identity.API\Identity.API.csproj", "{78B391E0-10C6-4B69-969E-B1AD72604657}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "src\Services\Catalog\Catalog.API\Catalog.API.csproj", "{785674D5-9867-4220-839E-F42815A593B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Core", "src\Services\Catalog\Catalog.Core\Catalog.Core.csproj", "{AA26FA47-B7ED-444E-A555-ED5D06EDD88A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Data", "src\Services\Catalog\Catalog.Data\Catalog.Data.csproj", "{10BE82CF-A8DE-4033-9136-DB1B6D78D68B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Services", "src\Services\Catalog\Catalog.Services\Catalog.Services.csproj", "{50DDF462-2C8E-4126-85BA-5C64C58DF3BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mssql-catalogdb", "mssql-catalogdb", "{BA040DB5-F427-4719-8B02-A26FFF7C2532}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\mssql-catalogdb\deployment.yaml = k8s\mssql-catalogdb\deployment.yaml
+		k8s\mssql-catalogdb\local-pvc.yaml = k8s\mssql-catalogdb\local-pvc.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enrolling", "Enrolling", "{920FE590-FAA9-46C5-AB85-FAEC0AB7B10C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enrolling.API", "src\Services\Enrolling\Enrolling.API\Enrolling.API.csproj", "{78FD4873-6F06-4024-8C8A-5FF74E6A923A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{79C2563F-8AEE-4225-B9AD-72FEF4561519}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.Bff", "src\ApiGateways\Web.Bff\Web.Bff.csproj", "{5DC21423-2B4C-4890-BEFF-52A7DD0BF10B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{42545FD7-FD4A-4C3C-84DF-CB237F61C0D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus", "src\EventBus\EventBus\EventBus.csproj", "{79DAB61C-5EA2-4B40-B078-F8ADAB000DC1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusRabbitMQ", "src\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj", "{BF6A9E01-AA27-4F40-8D52-D77ADBA630A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Tests", "src\Services\Catalog\Catalog.Tests\Catalog.Tests.csproj", "{350ED11A-9711-41F7-A12C-8550A1F50D12}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enrolling.Tests", "src\Services\Enrolling\Enrolling.Tests\Enrolling.Tests.csproj", "{1A500B6C-6133-4070-B5E0-D9166D0A8C0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "enrolling-api", "enrolling-api", "{42D22C20-B69A-40D5-9D66-B396E333F2B4}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\enrolling-api\deployment.yaml = k8s\enrolling-api\deployment.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "identity-api", "identity-api", "{7AF7C00B-7C84-4EFF-9695-DDB5C11ABA0D}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\identity-api\deployment.yaml = k8s\identity-api\deployment.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mssql-enrollingdb", "mssql-enrollingdb", "{83E605CA-09BD-498E-AA04-E064A06D71C7}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\mssql-enrollingdb\deployment.yaml = k8s\mssql-enrollingdb\deployment.yaml
+		k8s\mssql-enrollingdb\local-pvc.yaml = k8s\mssql-enrollingdb\local-pvc.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mssql-identitydb", "mssql-identitydb", "{8CE70F49-7AC3-475D-8FB2-EA236B3C75F0}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\mssql-identitydb\deployment.yaml = k8s\mssql-identitydb\deployment.yaml
+		k8s\mssql-identitydb\local-pvc.yaml = k8s\mssql-identitydb\local-pvc.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web-bff", "web-bff", "{B27ABF05-EF31-4B87-9B8D-AF659E7937A3}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\web-bff\deployment.yaml = k8s\web-bff\deployment.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtAuthenticationManager", "src\JwtAuthenticationManager\JwtAuthenticationManager.csproj", "{BA599669-80D0-4285-BA41-3C77B8F9BBE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78B391E0-10C6-4B69-969E-B1AD72604657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B391E0-10C6-4B69-969E-B1AD72604657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B391E0-10C6-4B69-969E-B1AD72604657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B391E0-10C6-4B69-969E-B1AD72604657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785674D5-9867-4220-839E-F42815A593B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785674D5-9867-4220-839E-F42815A593B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785674D5-9867-4220-839E-F42815A593B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785674D5-9867-4220-839E-F42815A593B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA26FA47-B7ED-444E-A555-ED5D06EDD88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA26FA47-B7ED-444E-A555-ED5D06EDD88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA26FA47-B7ED-444E-A555-ED5D06EDD88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA26FA47-B7ED-444E-A555-ED5D06EDD88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BE82CF-A8DE-4033-9136-DB1B6D78D68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BE82CF-A8DE-4033-9136-DB1B6D78D68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BE82CF-A8DE-4033-9136-DB1B6D78D68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BE82CF-A8DE-4033-9136-DB1B6D78D68B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50DDF462-2C8E-4126-85BA-5C64C58DF3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50DDF462-2C8E-4126-85BA-5C64C58DF3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50DDF462-2C8E-4126-85BA-5C64C58DF3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50DDF462-2C8E-4126-85BA-5C64C58DF3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78FD4873-6F06-4024-8C8A-5FF74E6A923A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78FD4873-6F06-4024-8C8A-5FF74E6A923A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78FD4873-6F06-4024-8C8A-5FF74E6A923A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78FD4873-6F06-4024-8C8A-5FF74E6A923A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC21423-2B4C-4890-BEFF-52A7DD0BF10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC21423-2B4C-4890-BEFF-52A7DD0BF10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC21423-2B4C-4890-BEFF-52A7DD0BF10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC21423-2B4C-4890-BEFF-52A7DD0BF10B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DAB61C-5EA2-4B40-B078-F8ADAB000DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DAB61C-5EA2-4B40-B078-F8ADAB000DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DAB61C-5EA2-4B40-B078-F8ADAB000DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DAB61C-5EA2-4B40-B078-F8ADAB000DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6A9E01-AA27-4F40-8D52-D77ADBA630A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6A9E01-AA27-4F40-8D52-D77ADBA630A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6A9E01-AA27-4F40-8D52-D77ADBA630A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6A9E01-AA27-4F40-8D52-D77ADBA630A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{350ED11A-9711-41F7-A12C-8550A1F50D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350ED11A-9711-41F7-A12C-8550A1F50D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350ED11A-9711-41F7-A12C-8550A1F50D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350ED11A-9711-41F7-A12C-8550A1F50D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A500B6C-6133-4070-B5E0-D9166D0A8C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A500B6C-6133-4070-B5E0-D9166D0A8C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A500B6C-6133-4070-B5E0-D9166D0A8C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A500B6C-6133-4070-B5E0-D9166D0A8C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA599669-80D0-4285-BA41-3C77B8F9BBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA599669-80D0-4285-BA41-3C77B8F9BBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA599669-80D0-4285-BA41-3C77B8F9BBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA599669-80D0-4285-BA41-3C77B8F9BBE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B3EEC0E-8D85-45AC-AE93-8FAF46C2C069} = {B7FB93DC-F2BB-46D8-993F-8E212C92D81D}
+		{93DC1A43-F434-4B7A-9F5E-07CE112154F1} = {6B3EEC0E-8D85-45AC-AE93-8FAF46C2C069}
+		{F24B6ACA-E65A-4CA9-8B01-146215112156} = {1BD01088-8F2C-4BF5-8631-27D1DAA97331}
+		{AC9C5C6B-ECCA-4BCD-9EAB-7348D291ACC1} = {6B3EEC0E-8D85-45AC-AE93-8FAF46C2C069}
+		{78B391E0-10C6-4B69-969E-B1AD72604657} = {AC9C5C6B-ECCA-4BCD-9EAB-7348D291ACC1}
+		{785674D5-9867-4220-839E-F42815A593B0} = {93DC1A43-F434-4B7A-9F5E-07CE112154F1}
+		{AA26FA47-B7ED-444E-A555-ED5D06EDD88A} = {93DC1A43-F434-4B7A-9F5E-07CE112154F1}
+		{10BE82CF-A8DE-4033-9136-DB1B6D78D68B} = {93DC1A43-F434-4B7A-9F5E-07CE112154F1}
+		{50DDF462-2C8E-4126-85BA-5C64C58DF3BF} = {93DC1A43-F434-4B7A-9F5E-07CE112154F1}
+		{BA040DB5-F427-4719-8B02-A26FFF7C2532} = {1BD01088-8F2C-4BF5-8631-27D1DAA97331}
+		{920FE590-FAA9-46C5-AB85-FAEC0AB7B10C} = {6B3EEC0E-8D85-45AC-AE93-8FAF46C2C069}
+		{78FD4873-6F06-4024-8C8A-5FF74E6A923A} = {920FE590-FAA9-46C5-AB85-FAEC0AB7B10C}
+		{79C2563F-8AEE-4225-B9AD-72FEF4561519} = {B7FB93DC-F2BB-46D8-993F-8E212C92D81D}
+		{5DC21423-2B4C-4890-BEFF-52A7DD0BF10B} = {79C2563F-8AEE-4225-B9AD-72FEF4561519}
+		{42545FD7-FD4A-4C3C-84DF-CB237F61C0D3} = {B7FB93DC-F2BB-46D8-993F-8E212C92D81D}
+		{79DAB61C-5EA2-4B40-B078-F8ADAB000DC1} = {42545FD7-FD4A-4C3C-84DF-CB237F61C0D3}
+		{BF6A9E01-AA27-4F40-8D52-D77ADBA630A8} = {42545FD7-FD4A-4C3C-84DF-CB237F61C0D3}
+		{350ED11A-9711-41F7-A12C-8550A1F50D12} = {93DC1A43-F434-4B7A-9F5E-07CE112154F1}
+		{1A500B6C-6133-4070-B5E0-D9166D0A8C0E} = {920FE590-FAA9-46C5-AB85-FAEC0AB7B10C}
+		{42D22C20-B69A-40D5-9D66-B396E333F2B4} = {1BD01088-8F2C-4BF5-8631-27D1DAA97331}
+		{7AF7C00B-7C84-4EFF-9695-DDB5C11ABA0D} = {1BD01088-8F2C-4BF5-8631-27D1DAA97331}
+		{83E605CA-09BD-498E-AA04-E064A06D71C7} = {1BD01088-8F2C-4BF5-8631-27D1DAA97331}
+		{8CE70F49-7AC3-475D-8FB2-EA236B3C75F0} = {1BD01088-8F2C-4BF5-8631-27D1DAA97331}
+		{B27ABF05-EF31-4B87-9B8D-AF659E7937A3} = {1BD01088-8F2C-4BF5-8631-27D1DAA97331}
+		{BA599669-80D0-4285-BA41-3C77B8F9BBE3} = {B7FB93DC-F2BB-46D8-993F-8E212C92D81D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BCC20F7-0747-4B98-ACE6-D8879A31E674}
+	EndGlobalSection
+EndGlobal

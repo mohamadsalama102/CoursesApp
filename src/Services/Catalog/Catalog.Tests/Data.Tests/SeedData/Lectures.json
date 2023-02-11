@@ -1,0 +1,212 @@
+[
+  {
+    "Order": 1,
+    "Title": "Introduction to the course",
+    "Description": "Description",
+    "SectionId": 1
+  },
+  {
+    "Order": 2,
+    "Title": "Setting up the development environment",
+    "Description": "Description",
+    "SectionId": 1
+  },
+  {
+    "Order": 1,
+    "Title": "Introduction",
+    "Description": "Description",
+    "SectionId": 2
+  },
+  {
+    "Order": 2,
+    "Title": "Creating the .Net API Project using the dotnet CLI",
+    "Description": "Description",
+    "SectionId": 2
+  },
+  {
+    "Order": 3,
+    "Title": "Setting up VS code to work with C#",
+    "Description": "Description",
+    "SectionId": 2
+  },
+  {
+    "Order": 1,
+    "Title": "Introducción",
+    "Description": "Description",
+    "SectionId": 6
+  },
+  {
+    "Order": 2,
+    "Title": "¿Qué es un API?",
+    "Description": "Description",
+    "SectionId": 6
+  },
+  {
+    "Order": 1,
+    "Title": "Introducción",
+    "Description": "Description",
+    "SectionId": 7
+  },
+  {
+    "Order": 2,
+    "Title": "Introducción a ASP.NET Core",
+    "Description": "Description",
+    "SectionId": 7
+  },
+  {
+    "Order": 3,
+    "Title": "Instalando Visual Studio",
+    "Description": "Description",
+    "SectionId": 7
+  },
+  {
+    "Order": 1,
+    "Title": "Machine learning Intro",
+    "Description": "Description",
+    "SectionId": 10
+  },
+  {
+    "Order": 2,
+    "Title": "Linear Regression",
+    "Description": "Description",
+    "SectionId": 10
+  },
+  {
+    "Order": 3,
+    "Title": "Train test split",
+    "Description": "Description",
+    "SectionId": 10
+  },
+  {
+    "Order": 1,
+    "Title": "Model evaluation - Machine Learning",
+    "Description": "Description",
+    "SectionId": 11
+  },
+  {
+    "Order": 2,
+    "Title": "sklearn pipeline in Machine Learning",
+    "Description": "Description",
+    "SectionId": 11
+  },
+  {
+    "Order": 1,
+    "Title": "تطبيقات الـ Machine Learning",
+    "Description": "Description",
+    "SectionId": 12
+  },
+  {
+    "Order": 2,
+    "Title": "لماذا الـ Machine Learning هو المستقبل",
+    "Description": "Description",
+    "SectionId": 12
+  },
+  {
+    "Order": 1,
+    "Title": "NumPy Arrays",
+    "Description": "Description",
+    "SectionId": 13
+  },
+  {
+    "Order": 2,
+    "Title": "NumPy Array Indexing",
+    "Description": "Description",
+    "SectionId": 13
+  },
+  {
+    "Order": 3,
+    "Title": "NumPy Operation",
+    "Description": "Description",
+    "SectionId": 13
+  },
+  {
+    "Order": 1,
+    "Title": "Getting Started",
+    "Description": "Description",
+    "SectionId": 17
+  },
+  {
+    "Order": 2,
+    "Title": "Declaring Variables",
+    "Description": "Description",
+    "SectionId": 17
+  },
+  {
+    "Order": 1,
+    "Title": "Introduction to Section 2",
+    "Description": "Description",
+    "SectionId": 18
+  },
+  {
+    "Order": 2,
+    "Title": "If Statements",
+    "Description": "Description",
+    "SectionId": 18
+  },
+  {
+    "Order": 3,
+    "Title": "If-Else Statements",
+    "Description": "Description",
+    "SectionId": 18
+  },
+  {
+    "Order": 1,
+    "Title": "Social Media Marketing Introduction",
+    "Description": "Description",
+    "SectionId": 23
+  },
+  {
+    "Order": 2,
+    "Title": "TAKE ACTION! Look Up Social Media Handles!",
+    "Description": "Description",
+    "SectionId": 23
+  },
+  {
+    "Order": 1,
+    "Title": "Why is Social Media Marketing Important?",
+    "Description": "Description",
+    "SectionId": 24
+  },
+  {
+    "Order": 2,
+    "Title": "What Content Should I Share on Social Media?",
+    "Description": "Description",
+    "SectionId": 24
+  },
+  {
+    "Order": 3,
+    "Title": "Social Media Management Tools: How to Cut Posting Time in Half!",
+    "Description": "Description",
+    "SectionId": 24
+  },
+  {
+    "Order": 1,
+    "Title": "Introduction",
+    "Description": "Description",
+    "SectionId": 27
+  },
+  {
+    "Order": 2,
+    "Title": "Setting up the development environment",
+    "Description": "Description",
+    "SectionId": 27
+  },
+  {
+    "Order": 1,
+    "Title": "Introduction",
+    "Description": "Description",
+    "SectionId": 28
+  },
+  {
+    "Order": 2,
+    "Title": "Creating the Web API Project",
+    "Description": "Description",
+    "SectionId": 28
+  },
+  {
+    "Order": 3,
+    "Title": "Running the API using the DotNet CLI",
+    "Description": "Description",
+    "SectionId": 28
+  }
+]

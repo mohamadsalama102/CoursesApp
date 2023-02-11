@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: catalog-api-depl
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: catalogservice
+ template:
+  metadata:
+   labels:
+    app: catalogservice
+  spec:
+   containers:
+    - name: catalogservice
+      image: nagiashraf/coursesappcatalogservice
+      env:
+      - name: CatalogConnectionString_Prod
+        valueFrom:
+         secretKeyRef:
+          name: catalogconnectionstring-prod-secret
+          key: CatalogConnectionString_Prod
+      - name: CloudinarySettings__CloudName
+        valueFrom:
+         secretKeyRef:
+          name: cloudinarysettings-secrets
+          key: CloudinarySettings__CloudName
+      - name: CloudinarySettings__ApiKey
+        valueFrom:
+         secretKeyRef:
+          name: cloudinarysettings-secrets
+          key: CloudinarySettings__ApiKey
+      - name: CloudinarySettings__ApiSecret
+        valueFrom:
+         secretKeyRef:
+          name: cloudinarysettings-secrets
+          key: CloudinarySettings__ApiSecret
+      - name: JwtSettings__SecretKey
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__SecretKey
+      - name: JwtSettings__ValidateIssuer
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidateIssuer
+      - name: JwtSettings__ValidIssuer
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidIssuer
+      - name: JwtSettings__ValidateAudience
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidateAudience
+      - name: JwtSettings__ValidAudience
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidAudience
+      - name: JwtSettings__TokenDurationInMinutes
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__TokenDurationInMinutes
+      - name: JwtSettings__RefreshTokenDurationInDays
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__RefreshTokenDurationInDays
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: catalogapi-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: catalogservice
+  ports:
+  - name: catalogapi
+    protocol: TCP
+    port: 80
+    targetPort: 80
+  - name: cataloggrpc
+    protocol: TCP
+    port: 666
+    targetPort: 666

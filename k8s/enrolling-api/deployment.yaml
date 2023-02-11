@@ -1,0 +1,83 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: enrolling-api-depl
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: enrollingservice
+ template:
+  metadata:
+   labels:
+    app: enrollingservice
+  spec:
+   containers:
+    - name: enrollingservice
+      image: nagiashraf/coursesappenrollingservice
+      env:
+      - name: EnrollingConnectionString_Prod
+        valueFrom:
+         secretKeyRef:
+          name: enrollingconnectionstring-prod-secret
+          key: EnrollingConnectionString_Prod
+      - name: StripeSettings__PublishableKey
+        valueFrom:
+         secretKeyRef:
+          name: stripesettings-secrets
+          key: StripeSettings__PublishableKey
+      - name: StripeSettings__SecretKey
+        valueFrom:
+         secretKeyRef:
+          name: stripesettings-secrets
+          key: StripeSettings__SecretKey
+      - name: JwtSettings__SecretKey
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__SecretKey
+      - name: JwtSettings__ValidateIssuer
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidateIssuer
+      - name: JwtSettings__ValidIssuer
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidIssuer
+      - name: JwtSettings__ValidateAudience
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidateAudience
+      - name: JwtSettings__ValidAudience
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidAudience
+      - name: JwtSettings__TokenDurationInMinutes
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__TokenDurationInMinutes
+      - name: JwtSettings__RefreshTokenDurationInDays
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__RefreshTokenDurationInDays
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: enrollingapi-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: enrollingservice
+  ports:
+  - name: enrollingapi
+    protocol: TCP
+    port: 80
+    targetPort: 80

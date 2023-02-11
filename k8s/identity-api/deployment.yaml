@@ -1,0 +1,101 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: identity-api-depl
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: identityservice
+ template:
+  metadata:
+   labels:
+    app: identityservice
+  spec:
+   containers:
+    - name: identityservice
+      image: nagiashraf/coursesappidentityservice
+      env:
+      - name: IdentityConnectionString_Prod
+        valueFrom:
+         secretKeyRef:
+          name: identityconnectionstring-prod-secret
+          key: IdentityConnectionString_Prod
+      - name: JwtSettings__SecretKey
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__SecretKey
+      - name: JwtSettings__ValidateIssuer
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidateIssuer
+      - name: JwtSettings__ValidIssuer
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidIssuer
+      - name: JwtSettings__ValidateAudience
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidateAudience
+      - name: JwtSettings__ValidAudience
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__ValidAudience
+      - name: JwtSettings__TokenDurationInMinutes
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__TokenDurationInMinutes
+      - name: JwtSettings__RefreshTokenDurationInDays
+        valueFrom:
+         secretKeyRef:
+          name: jwtsettings-secrets
+          key: JwtSettings__RefreshTokenDurationInDays
+      - name: EmailSettings__From
+        valueFrom:
+         secretKeyRef:
+          name: emailsettings-secrets
+          key: EmailSettings__From
+      - name: EmailSettings__DisplayName
+        valueFrom:
+         secretKeyRef:
+          name: emailsettings-secrets
+          key: EmailSettings__DisplayName
+      - name: EmailSettings__Password
+        valueFrom:
+         secretKeyRef:
+          name: emailsettings-secrets
+          key: EmailSettings__Password
+      - name: EmailSettings__Host
+        valueFrom:
+         secretKeyRef:
+          name: emailsettings-secrets
+          key: EmailSettings__Host
+      - name: EmailSettings__Port
+        valueFrom:
+         secretKeyRef:
+          name: emailsettings-secrets
+          key: EmailSettings__Port
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: identityapi-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: identityservice
+  ports:
+  - name: identityapi
+    protocol: TCP
+    port: 80
+    targetPort: 80
+  - name: identitygrpc
+    protocol: TCP
+    port: 666
+    targetPort: 666

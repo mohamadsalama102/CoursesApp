@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "nagiashraf.CoursesApp.Services.Identity.API.Protos";
+
+service GrpcIdentity {
+    rpc GetUserDetails (GetUserDetailsRequest) returns (IdentityResponse);
+}
+
+message GetUserDetailsRequest {
+	string userId = 1;
+}
+
+message GrpcUserDto {
+    string id = 1;
+    string firstName = 2;
+    string lastName = 3;
+    string headline = 4;
+    string biography = 5;
+    string photoUrl = 6;
+    string photoPublicId = 7;
+}
+
+message IdentityResponse {
+    GrpcUserDto grpcUserDto = 1;
+}

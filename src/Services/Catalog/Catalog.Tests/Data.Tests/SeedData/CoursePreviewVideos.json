@@ -1,0 +1,37 @@
+[
+  {
+    "Url": "https://res.cloudinary.com/calma3corazon7e/video/upload/v1672225252/Build_an_app_with_ASPNET_Core_and_Angular_from_scratch_fcr2nb.mp4",
+    "PublicId": "",
+    "CourseId": 1
+  },
+  {
+    "Url": "https://res.cloudinary.com/calma3corazon7e/video/upload/v1672225413/Construyendo_Web_APIs_RESTful_con_ASP.NET_Core_6_qud9om.mp4",
+    "PublicId": "",
+    "CourseId": 2
+  },
+  {
+    "Url": "https://res.cloudinary.com/calma3corazon7e/video/upload/v1672225415/Machine_Learning_Artificial_Intelligence_with_Python_phgbqm.mp4",
+    "PublicId": "",
+    "CourseId": 3
+  },
+  {
+    "Url": "https://res.cloudinary.com/calma3corazon7e/video/upload/v1672225416/Machine_Learning_Nanodegree_getvtm.mp4",
+    "PublicId": "",
+    "CourseId": 4
+  },
+  {
+    "Url": "https://res.cloudinary.com/calma3corazon7e/video/upload/v1672225415/Fundamentals_of_Programming_Understanding_C_dhhebl.mp4",
+    "PublicId": "",
+    "CourseId": 5
+  },
+  {
+    "Url": "https://res.cloudinary.com/calma3corazon7e/video/upload/v1672225416/Social_Media_Marketing_MASTERY_2023_Ads_on_10_Platforms_mdakvi.mp4",
+    "PublicId": "",
+    "CourseId": 6
+  },
+  {
+    "Url": "https://res.cloudinary.com/calma3corazon7e/video/upload/v1672225414/Learn_to_build_an_e-commerce_app_with_.Net_Core_and_Angular_qp3ez9.mp4",
+    "PublicId": "",
+    "CourseId": 7
+  }
+]

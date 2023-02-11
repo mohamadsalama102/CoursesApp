@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "nagiashraf.CoursesApp.Services.Identity.API.Protos";
+
+service GrpcIdentity {
+    rpc GetUserDetails (GetUserDetailsRequest) returns (IdentityResponse);
+}
+
+message GetUserDetailsRequest {
+	string userId = 1;
+}
+
+message GrpcUserDto {
+    string id = 1;
+    string firstName = 2;
+    string lastName = 3;
+    google.protobuf.StringValue headline = 4;
+    google.protobuf.StringValue biography = 5;
+    google.protobuf.StringValue photoUrl = 6;
+    google.protobuf.StringValue photoPublicId = 7;
+}
+
+message IdentityResponse {
+    GrpcUserDto grpcUserDto = 1;
+}
